@@ -154,7 +154,7 @@ function Utils.Framework.givePlayerWeapon(source,item,amount)
 	if Config.custom_scripts_compatibility.mdt == "ps-mdt" then
 		local xPlayer = QBCore.Functions.GetPlayer(source)
 		local serial = tostring(QBCore.Shared.RandomInt(2) .. QBCore.Shared.RandomStr(3) .. QBCore.Shared.RandomInt(1) .. QBCore.Shared.RandomStr(2) .. QBCore.Shared.RandomInt(3) .. QBCore.Shared.RandomStr(4))
-		local imageurl = ("https://cfx-nui-qb-inventory/html/images/%s.png"):format(item)
+		local imageurl = ("https://cfx-nui-ps-inventory/html/images/%s.png"):format(item)
 		local notes = "Purchased at Gun Club"
 		local owner = xPlayer.PlayerData.charinfo.firstname .. " " .. xPlayer.PlayerData.charinfo.lastname
 		local weapClass = 1
